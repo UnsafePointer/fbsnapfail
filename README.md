@@ -21,7 +21,7 @@ After installing, configure it as a post-build action:
 Configure your IDE for remote debugging listening to port 8000 then run:
 
 ```
-mvn hpi:run
+mvnDebug hpi:run
 ```
 
 ### Building

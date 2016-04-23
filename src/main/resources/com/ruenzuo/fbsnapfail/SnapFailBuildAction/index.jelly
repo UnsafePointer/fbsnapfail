@@ -10,8 +10,8 @@
 
             <j:forEach var="reference" items="${it.detected.keySet()}">
             <li>
-            <h4>Reference:</h4><img src="${reference}"/>
-            <h4>Failed:</h4><img src="${it.detected.get(reference)}"/>
+            <h4>Reference: ${reference}</h4><img src="${reference}"/>
+            <h4>Failed: ${it.detected.get(reference)}</h4><img src="${it.detected.get(reference)}"/>
             </li>
             </j:forEach>
             </ul>

@@ -4,6 +4,17 @@
         <l:main-panel>
             <h1>${it.displayName}</h1>
             <h2>Build #${it.buildNumber}'s</h2>
+
+            <h2>Failed tests</h2>
+            <ul>
+
+            <j:forEach var="reference" items="${it.detected.keySet()}">
+            <li>
+            <h4>Reference:</h4>${reference}
+            <h4>Failed:</h4>${it.detected.get(reference)}
+            </li>
+            </j:forEach>
+            </ul>
         </l:main-panel>
     </l:layout>
 </j:jelly>
